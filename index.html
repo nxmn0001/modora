@@ -41,8 +41,7 @@
       "mainEntity": {
         "@type": "WebPage",
         "hasPart": [
-          {"@type": "SiteNavigationElement", "name": "Games", "url": "https://modora.my.id/games/"},
-          {"@type": "SiteNavigationElement", "name": "Blog", "url": "https://modora.my.id/blog/"}
+          {"@type": "SiteNavigationElement", "name": "Games", "url": "https://modora.my.id/games/"}
         ]
       }
     }
@@ -188,7 +187,6 @@
         .menu-grid-item i { font-size: 2em; }
         .menu-grid-item.home { background-color: var(--blue-color); }
         .menu-grid-item.games { background-color: var(--red-color); }
-        .menu-grid-item.blog { background-color: var(--yellow-color); color: white; }
         .menu-grid-item.faq { background-color: var(--teal-color); }
         .menu-grid-item.dark-mode { background-color: var(--orange-color); }
         .menu-grid-item.telegram-bg { background-color: #0088cc; }
@@ -249,7 +247,7 @@
             display: block;
             aspect-ratio: 16 / 9;
             object-fit: cover;
-            filter: blur(8px);
+            filter: blur(50px);
         }
         .slide-title-container {
             position: absolute;
@@ -307,8 +305,7 @@
             padding: 0;
             scroll-margin-top: 70px; 
         }
-        .app-list + .section-header,
-        .categories-wrapper + .footer-container {
+        .app-list + .section-header {
              margin-top: 50px;
         }
         .section-title-group {
@@ -436,77 +433,12 @@
             display: none;
         }
         
-        .blog-list {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        .blog-post-item {
-            background-color: var(--card-bg);
-            border-radius: 12px;
-            padding: 15px;
-            box-shadow: 0 4px 12px var(--shadow-color);
-            text-decoration: none;
-            color: var(--text-color);
-            font-weight: 600;
-            font-size: 1em;
-            transition: var(--transition-smooth);
-            display: block; 
-        }
-        .blog-post-item:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 16px var(--shadow-color);
-            color: var(--blue-color);
-        }
-
-        .blog-list:not(.show-all) .blog-post-item:nth-child(n + 6) {
-            display: none;
-        }
-
-        .blog-list.show-all .blog-post-item {
-            display: block !important;
-        }
-
-        .categories-wrapper {
-            background-color: var(--card-bg);
-            border-radius: 16px;
-            padding: 20px;
-            box-shadow: 0 4px 12px var(--shadow-color);
-            margin-top: 50px;
-        }
-        .category-grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
-            gap: 10px;
-        }
-        .category-button {
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            padding: 8px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-size: 0.8em;
-            font-weight: 500;
-            box-shadow: none;
-            border: 1px solid var(--border-color);
-            transition: var(--transition-smooth);
-            text-align: center;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        .category-button:hover {
-            background-color: var(--blue-color);
-            color: white;
-            border-color: var(--blue-color);
-            transform: translateY(-2px);
-        }
-
         .footer-container {
             background-color: var(--card-bg);
             border-radius: 16px;
             padding: 20px;
             box-shadow: 0 4px 12px var(--shadow-color);
+            margin-top: 50px;
         }
         .footer-links-grid {
             display: grid;
@@ -611,7 +543,6 @@
         <div class="menu-grid">
             <a href="/" class="menu-grid-item home"><i class="fa-solid fa-home"></i><span>Home</span></a>
             <a href="https://modora.my.id/games/" class="menu-grid-item games"><i class="fa-solid fa-gamepad"></i><span>Games</span></a>
-            <a href="https://modora.my.id/blog/" class="menu-grid-item blog"><i class="fa-solid fa-file-alt"></i><span>Blog</span></a>
             <a href="/faq.html" class="menu-grid-item faq"><i class="fa fa-question-circle"></i><span>FAQ</span></a>
             <button id="dark-mode-toggle" class="menu-grid-item dark-mode">
                 <i class="fa-solid fa-sun"></i><span>Dark Mode</span>
@@ -668,25 +599,13 @@
                     <div class="app-list" id="update-games-list"><a href="mods/capcut-v22.4.4-mod-apk-pro-premium-unlocked/" class="app-card" data-title="MODS"><div class="card-image-container"><img src="https://modora.my.id/mods/capcut-v22.4.4-mod-apk-pro-premium-unlocked/icon.png" alt="CapCut v22.4.4 MOD APK (Pro, Premium Unlocked)"></div><div class="card-content"><div class="card-title-row"><h3>CapCut v22.4.4 MOD APK (Pro, Premium Unlocked)</h3></div><div class="card-details"><span><strong><i class="fa-solid fa-code-branch"></i> Version</strong> v22.4.4</span></div><div class="card-details"><span><strong><i class="fa-solid fa-folder-open"></i> Category</strong> Video Players, Editors</span></div></div></a><a href="mods/terabox-v4.6.4-mod-apk-premium-unlocked/" class="app-card" data-title="MODS"><div class="card-image-container"><img src="https://modora.my.id/mods/terabox-v4.6.4-mod-apk-premium-unlocked/icon.png" alt="Terabox v4.6.4 MOD APK (Premium Unlocked)"></div><div class="card-content"><div class="card-title-row"><h3>Terabox v4.6.4 MOD APK (Premium Unlocked)</h3></div><div class="card-details"><span><strong><i class="fa-solid fa-code-branch"></i> Version</strong> v4.6.4</span></div><div class="card-details"><span><strong><i class="fa-solid fa-folder-open"></i> Category</strong> Casual</span></div></div></a><a href="mods/rally-one-v1.63-mod-apk-unlimited-money-unlocked/" class="app-card" data-title="MODS"><div class="card-image-container"><img src="https://modora.my.id/mods/rally-one-v1.63-mod-apk-unlimited-money-unlocked/icon.jpg" alt="Rally ONE v1.63 MOD APK (Unlimited Money, Unlocked)"></div><div class="card-content"><div class="card-title-row"><h3>Rally ONE v1.63 MOD APK (Unlimited Money, Unlocked)</h3></div><div class="card-details"><span><strong><i class="fa-solid fa-code-branch"></i> Version</strong> v1.63</span></div><div class="card-details"><span><strong><i class="fa-solid fa-folder-open"></i> Category</strong> Racing</span></div></div></a><a href="mods/mad-skills-motocross-3-v4.6.1-mod-apk-unlimited-money/" class="app-card" data-title="MODS"><div class="card-image-container"><img src="https://modora.my.id/mods/mad-skills-motocross-3-v4.6.1-mod-apk-unlimited-money/icon.jpg" alt="Mad Skills Motocross 3 v4.6.1 MOD APK (Unlimited Money)"></div><div class="card-content"><div class="card-title-row"><h3>Mad Skills Motocross 3 v4.6.1 MOD APK (Unlimited Money)</h3></div><div class="card-details"><span><strong><i class="fa-solid fa-code-branch"></i> Version</strong> v4.6.1</span></div><div class="card-details"><span><strong><i class="fa-solid fa-folder-open"></i> Category</strong> Racing</span></div></div></a><a href="mods/camscanner-v7.3.1.2509240000-mod-apk-premium-unlocked/" class="app-card" data-title="MODS"><div class="card-image-container"><img src="https://modora.my.id/mods/camscanner-v7.3.1.2509240000-mod-apk-premium-unlocked/icon.png" alt="CamScanner v7.3.1.2509240000 MOD APK (Premium Unlocked)"></div><div class="card-content"><div class="card-title-row"><h3>CamScanner v7.3.1.2509240000 MOD APK (Premium Unlocked)</h3></div><div class="card-details"><span><strong><i class="fa-solid fa-code-branch"></i> Version</strong> v7.3.1.2509240000</span></div><div class="card-details"><span><strong><i class="fa-solid fa-folder-open"></i> Category</strong> Productivity</span></div></div></a>
                     </div>
 
-                    <div class="section-header" id="blog-section" style="margin-top: 50px;">
-                        <div class="section-title-group">
-                            <span class="section-icon" style="background-color: #e5f7f0; color: #4fd18e;"><i class="fa-solid fa-file-alt"></i></span>
-                            <h2>Artikel Blog</h2>
-                        </div>
-                        <button class="view-all-btn">Lihat Semua</button>
-                    </div>
-                    <div class="blog-list app-list" id="blog-list">
-                  </div>
                 </div>
             </div>
 
             <div id="common-sections">
-                <div class="categories-wrapper">
-                    <div class="category-grid-container" id="game-categories-grid"></div>
-                </div>
                 
                 <footer class="footer-container">
-                    <div class="footer-links-grid">                               
+                    <div class="footer-links-grid">                                
                         <a href="https://modora.my.id/about/" class="footer-link">About</a>
                         <a href="https://modora.my.id/privacy-policy/" class="footer-link">Privacy</a>
                         <a href="https://modora.my.id/contact/" class="footer-link">Contact</a>
@@ -710,9 +629,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // --- Deklarasi Elemen UI ---
     const homeContent = document.getElementById('home-content');
-    const categoryResultsContainer = document.getElementById('category-results-container');
-    const categoryResultsList = document.getElementById('category-results-list');
-    const categoryResultsTitle = document.getElementById('category-results-title');
     const menuToggle = document.getElementById('menu-toggle');
     const menuOverlay = document.getElementById('menu-overlay');
     const menuClose = document.getElementById('menu-close');
@@ -756,7 +672,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const showHomeContent = () => {
         homeContent.style.display = 'block';
-        categoryResultsContainer.style.display = 'none';
         mainSearchInput.value = '';
         menuSearchInput.value = '';
     };
@@ -802,61 +717,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
     
-    const showCategoryResults = (categoryName) => {
-        const allItems = document.querySelectorAll('#update-games-list .app-card');
-        homeContent.style.display = 'none';
-        categoryResultsContainer.style.display = 'block';
-        categoryResultsTitle.textContent = `Result: ${categoryName}`;
-        categoryResultsList.innerHTML = '';
-
-        const matchingItems = [];
-        allItems.forEach(card => {
-            const categoryElement = card.querySelectorAll('.card-details')[1];
-            if (categoryElement && categoryElement.textContent.replace('Category', '').trim() === categoryName) {
-                matchingItems.push(card);
-            }
-        });
-
-        const addedBaseNames = new Set();
-        matchingItems.forEach(item => {
-            const title = item.querySelector('h3').textContent;
-            const baseName = title.replace(/\s*v[\d\.]+.*$/i, '').trim();
-            if (!addedBaseNames.has(baseName)) {
-                categoryResultsList.appendChild(item.cloneNode(true));
-                addedBaseNames.add(baseName);
-            }
-        });
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-        if (menuOverlay.classList.contains('active')) toggleOverlay(menuOverlay, false);
-        if (searchOverlay.classList.contains('active')) toggleOverlay(searchOverlay, false);
-    };
-
-    const generateCategories = (sourceListSelector, targetGridSelector) => {
-        const sourceList = document.querySelector(sourceListSelector);
-        const targetGrid = document.querySelector(targetGridSelector);
-        if (!sourceList || !targetGrid) return;
-        const categories = new Set();
-        sourceList.querySelectorAll('.app-card').forEach(card => {
-            const categoryDetail = card.querySelectorAll('.card-details')[1];
-            if (categoryDetail) {
-                const categoryText = categoryDetail.textContent.replace('Category', '').trim();
-                if (categoryText) categories.add(categoryText);
-            }
-        });
-        targetGrid.innerHTML = '';
-        categories.forEach(category => {
-            const link = document.createElement('a');
-            link.className = 'category-button';
-            link.href = '#';
-            link.textContent = category;
-            link.addEventListener('click', e => {
-                e.preventDefault();
-                showCategoryResults(category);
-            });
-            targetGrid.appendChild(link);
-        });
-    };
-
     const populateNewUpdateSection = () => {
         const newUpdateList = document.getElementById('new-update-list');
         const gamesList = document.getElementById('update-games-list');
@@ -867,7 +727,7 @@ document.addEventListener('DOMContentLoaded', function() {
     };
     
     const animateCards = () => {
-        const cards = document.querySelectorAll('#home-content .app-card, #home-content .blog-post-item');
+        const cards = document.querySelectorAll('#home-content .app-card');
         cards.forEach((card, index) => {
             setTimeout(() => {
                 card.classList.add('card-anim');
@@ -972,7 +832,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     searchClose.addEventListener('click', () => toggleOverlay(searchOverlay, false));
 
-    let currentTheme = localStorage.getItem('theme') || 'light';
+    let currentTheme = localStorage.getItem('theme') || 'dark';
     applyTheme(currentTheme);
     
     headerDarkModeToggle.addEventListener('click', toggleAndApplyTheme);
@@ -1000,10 +860,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // --- Menjalankan Fungsi Saat Halaman Dimuat ---
     setCopyrightYear();
     populateNewUpdateSection();
-    generateCategories('#update-games-list', '#game-categories-grid');
     animateCards();
 });
 </script>
 
 
-</body></html>
+</body>
+</html>
