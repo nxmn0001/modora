@@ -972,7 +972,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     searchClose.addEventListener('click', () => toggleOverlay(searchOverlay, false));
 
-    let currentTheme = localStorage.getItem('theme') || 'dark';
+    let currentTheme = localStorage.getItem('theme') || 'light';
     applyTheme(currentTheme);
     
     headerDarkModeToggle.addEventListener('click', toggleAndApplyTheme);
