@@ -3,26 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tentang Kami - NIXY GAMING</title>
+    <title>MODORA - About Us</title>
     
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="icon.png" type="image/png">
     
-    <meta name="description" content="Pelajari lebih lanjut tentang NIXY GAMING. Temukan misi kami untuk menyediakan download game Android terbaru, aman, dan gratis bagi para gamer di seluruh dunia.">
-    <meta name="keywords" content="tentang kami, about us, NIXY GAMING, download game, game android, visi misi">
-    <meta name="author" content="NIXY GAMING">
+    <meta name="description" content="Pelajari lebih lanjut tentang MODORA, misi kami untuk menyediakan aplikasi premium dan game mod apk yang aman dan terpercaya bagi para pengguna.">
+    <meta name="author" content="MODORA">
     <meta name="robots" content="index, follow">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://nixygaming.my.id/about.html">
-    <meta property="og:title" content="Tentang Kami - NIXY GAMING">
-    <meta property="og:description" content="Temukan misi kami untuk menyediakan download game Android terbaru, aman, dan gratis.">
-    <meta property="og:image" content="https://nixygaming.my.id/banner.jpg">
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://nixygaming.my.id/about.html">
-    <meta property="twitter:title" content="Tentang Kami - NIXY GAMING">
-    <meta property="twitter:description" content="Temukan misi kami untuk menyediakan download game Android terbaru, aman, dan gratis.">
-    <meta property="twitter:image" content="https://nixygaming.my.id/banner.jpg">
-
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&amp;display=swap" rel="stylesheet">
 
     <style>
         :root {
@@ -37,7 +30,6 @@
             --red-color: #dc3545; 
             --transition-smooth: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
         }
-
         body.dark-mode {
             --bg-color: #121212;
             --text-color: #e0e0e0;
@@ -47,32 +39,39 @@
             --shadow-color: rgba(0, 0, 0, 0.4);
             --border-color: #333;
         }
-        
         html { scroll-behavior: smooth; }
         * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             background-color: var(--bg-color);
             color: var(--text-color);
             transition: background-color 0.3s, color 0.3s;
         }
-
         .container { max-width: 1200px; margin: 0 auto; padding: 20px 15px; }
-
         header {
             background-color: var(--header-bg);
             box-shadow: 0 2px 4px var(--shadow-color);
             padding: 10px 15px;
-            display: flex; justify-content: space-between; align-items: center;
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center;
             position: sticky; top: 0; z-index: 998;
         }
-        .header-left { display: flex; align-items: center; gap: 15px; }
-        .header-logo img { height: 30px; display: block; }
-        .header-btn { background: none; border: none; font-size: 1.4em; color: var(--text-color-light); cursor: pointer; padding: 5px; }
+        .header-logo a { text-decoration: none; }
+        .logo-text { font-family: 'Russo One', sans-serif; font-size: 1.6em; letter-spacing: 0.5px; }
+        .logo-nixy { color: var(--blue-color); }
+        .logo-gaming { color: var(--red-color); }
+        .header-right { display: flex; align-items: center; gap: 10px; }
+        .header-btn {
+            background: none; border: none;
+            font-size: 1.4em; color: var(--text-color-light);
+            cursor: pointer; padding: 5px;
+            width: 34px; height: 34px;
+            display: flex; align-items: center; justify-content: center;
+            text-decoration: none;
+        }
         .header-btn:hover { color: var(--text-color); }
-
-        .footer-container { background-color: var(--card-bg); border-radius: 16px; padding: 20px; box-shadow: 0 4px 12px var(--shadow-color); margin-top: 40px; }
+        .footer-container { background-color: var(--card-bg); border-radius: 16px; padding: 20px; box-shadow: 0 4px 12px var(--shadow-color); margin-top: 50px; }
         .footer-links-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 20px; }
         .footer-link { background-color: var(--bg-color); color: var(--text-color); padding: 8px; border-radius: 8px; text-align: center; text-decoration: none; font-size: 0.8em; font-weight: 500; transition: var(--transition-smooth); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
         .footer-link:hover { background-color: var(--blue-color); color: white; }
@@ -80,93 +79,63 @@
         .footer-social-icons a { color: var(--text-color-light); font-size: 1.5em; transition: var(--transition-smooth); }
         .footer-social-icons a:hover { color: var(--blue-color); transform: scale(1.1); }
         .footer-copyright { text-align: center; font-size: 0.8em; color: var(--text-color-light); padding-top: 15px; border-top: 1px solid var(--border-color); }
-        
-        /* Static Page Content Style */
-        .page-content-wrapper {
+        .static-content-card {
             background-color: var(--card-bg);
             border-radius: 16px;
             padding: 25px 30px;
             box-shadow: 0 4px 12px var(--shadow-color);
-            line-height: 1.7;
+            margin-top: 25px;
         }
-        .page-content-wrapper h1 {
+        .static-content-card h2 {
             font-size: 1.8em;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             color: var(--text-color);
         }
-        .page-content-wrapper h2 {
-            font-size: 1.4em;
-            margin-top: 30px;
-            margin-bottom: 10px;
-            color: var(--text-color);
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 5px;
-        }
-        .page-content-wrapper p, .page-content-wrapper ul {
-            margin-bottom: 15px;
+        .static-content-card p {
+            font-size: 1em;
+            line-height: 1.7;
             color: var(--text-color-light);
-        }
-        .page-content-wrapper ul {
-            padding-left: 20px;
-        }
-        .page-content-wrapper a {
-            color: var(--blue-color);
-            text-decoration: none;
-        }
-        .page-content-wrapper a:hover {
-            text-decoration: underline;
-        }
-        .page-content-wrapper strong {
-            color: var(--text-color);
+            margin-bottom: 15px;
         }
     </style>
-    
 </head>
 <body>
 
     <header>
-        <div class="header-left">
-             <div class="header-logo">
-                <a href="/"><img src="navigasi.png" alt="NIXY GAMING"></a>
-            </div>
+        <div class="header-logo">
+            <a href="index.html"><span class="logo-text"><span class="logo-nixy">MOD</span><span class="logo-gaming">ORA</span></span></a>
         </div>
-         <a href="/" class="header-btn" aria-label="Kembali ke Beranda"><i class="fa-solid fa-home"></i></a>
+        <div class="header-right">
+            <button id="header-dark-mode-toggle" class="header-btn" aria-label="Ganti Tema">
+                <i class="fa-solid fa-sun"></i>
+            </button>
+            <a href="index.html" class="header-btn" aria-label="Kembali ke Home">
+                <i class="fa-solid fa-home"></i>
+            </a>
+        </div>
     </header>
 
     <main>
         <div class="container">
-            <div class="page-content-wrapper">
-                <h1>Tentang NIXY GAMING</h1>
-
-                <h2>Siapa Kami?</h2>
-                <p>Selamat datang di <strong>NIXY GAMING</strong>, portal utama Anda untuk menemukan dan mengunduh ribuan game Android terbaru, aman, dan gratis. Kami adalah tim yang bersemangat tentang dunia gaming dan berdedikasi untuk menciptakan platform yang mudah diakses bagi para gamer di seluruh Indonesia dan dunia.</p>
-
-                <h2>Misi Kami</h2>
-                <p>Misi kami sederhana: menjadi sumber terpercaya untuk download game. Kami percaya bahwa setiap orang berhak mendapatkan akses mudah ke hiburan berkualitas tanpa khawatir tentang keamanan. Oleh karena itu, kami berkomitmen untuk:</p>
-                <ul>
-                    <li><strong>Keamanan:</strong> Setiap file yang kami sediakan telah diperiksa untuk memastikan bebas dari malware dan virus. Keamanan Anda adalah prioritas kami.</li>
-                    <li><strong>Kualitas:</strong> Kami hanya memilih dan menyediakan game-game berkualitas dari berbagai genre untuk memastikan Anda mendapatkan pengalaman bermain terbaik.</li>
-                    <li><strong>Kemudahan:</strong> Dengan antarmuka yang bersih dan navigasi yang intuitif, kami membuat proses mencari dan mengunduh game menjadi cepat dan mudah.</li>
-                </ul>
-
-                <h2>Apa yang Kami Tawarkan?</h2>
-                <p>Di NIXY GAMING, Anda akan menemukan koleksi game yang terus bertambah, mulai dari game aksi, strategi, RPG, hingga game kasual yang seru. Kami selalu memperbarui situs kami dengan rilis terbaru dan versi terupdate dari game-game favorit Anda.</p>
-
-                <h2>Terhubung dengan Kami</h2>
-                <p>Kami sangat menghargai masukan dari komunitas kami. Jika Anda memiliki pertanyaan, saran, atau permintaan game, jangan ragu untuk <a href="contact.html">menghubungi kami</a>. Terima kasih telah menjadi bagian dari NIXY GAMING!</p>
-
+            <div class="static-content-card">
+                <h2>Tentang Kami</h2>
+                <p>
+                    Selamat datang di <strong>MODORA</strong>, portal terdepan Anda untuk menemukan dan mengunduh ribuan aplikasi premium dan game modifikasi (MOD APK) terbaru. Kami berdedikasi untuk menyediakan akses yang mudah, aman, dan gratis ke berbagai aplikasi yang telah ditingkatkan dengan fitur-fitur premium yang terbuka.
+                </p>
+                <p>
+                    Misi kami adalah membangun komunitas bagi para pencinta game dan aplikasi yang ingin merasakan pengalaman lebih tanpa batasan. Di MODORA, setiap file diuji untuk memastikan keamanannya sebelum dipublikasikan. Kami percaya bahwa setiap orang berhak mendapatkan akses ke teknologi terbaik, dan kami bekerja keras untuk mewujudkannya.
+                </p>
+                <p>
+                    Tim kami terdiri dari para pengembang dan pegiat teknologi yang bersemangat untuk berbagi aplikasi dan game terbaik dengan Anda. Terima kasih telah menjadi bagian dari komunitas MODORA!
+                </p>
             </div>
-
-             <footer class="footer-container">
-                <div class="footer-links-grid">
-                    <a href="privacy-policy.html" class="footer-link">Privacy</a>
+            
+            <footer class="footer-container">
+                <div class="footer-links-grid">                                
                     <a href="about.html" class="footer-link">About</a>
+                    <a href="privacy.html" class="footer-link">Privacy</a>
                     <a href="contact.html" class="footer-link">Contact</a>
-                    <a href="terms.html" class="footer-link">Terms</a>
-                    <a href="disclaimer.html" class="footer-link">Disclaimer</a>
-                    <a href="dmca.html" class="footer-link">DMCA</a>
-                    <a href="sitemap.html" class="footer-link">Sitemap</a>
-                    <a href="cookie-policy.html" class="footer-link">Cookie</a>
+                    <a href="/" class="footer-link">Sitemap</a>
                 </div>
                 <div class="footer-social-icons">
                     <a href="https://t.me/+JZVMFir6yM0yZmY1" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
@@ -175,18 +144,39 @@
                     <a href="/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                     <a href="/" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                 </div>
-                <div class="footer-copyright" id="copyright-year">
-                </div>
+                <div class="footer-copyright" id="copyright-year"></div>
             </footer>
         </div>
     </main>
 
     <script>
     document.addEventListener('DOMContentLoaded', function() {
+        const headerDarkModeToggle = document.getElementById('header-dark-mode-toggle');
+        if (headerDarkModeToggle) {
+            const headerDarkModeIcon = headerDarkModeToggle.querySelector('i');
+            
+            const applyTheme = (theme) => {
+                document.body.classList.toggle('dark-mode', theme === 'dark');
+                const iconClass = theme === 'dark' ? 'fa-solid fa-moon' : 'fa-solid fa-sun';
+                if(headerDarkModeIcon) headerDarkModeIcon.className = iconClass;
+            };
+            
+            const toggleAndApplyTheme = () => {
+                const newTheme = document.body.classList.contains('dark-mode') ? 'light' : 'dark';
+                applyTheme(newTheme);
+                localStorage.setItem('theme', newTheme);
+            };
+
+            let currentTheme = localStorage.getItem('theme') || 'dark';
+            applyTheme(currentTheme);
+            
+            headerDarkModeToggle.addEventListener('click', toggleAndApplyTheme);
+        }
+
         const setCopyrightYear = () => {
             const copyrightElement = document.getElementById('copyright-year');
             if (copyrightElement) {
-                copyrightElement.innerHTML = `All Right Reserved Copyright © ${new Date().getFullYear()}`;
+                copyrightElement.innerHTML = `All Right Reserved Copyright © ${new Date().getFullYear()} MODORA`;
             }
         };
         setCopyrightYear();
